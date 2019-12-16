@@ -45,7 +45,7 @@ initialize();
 * Initialize the contents of the frame.
 */
 private void initialize() {
-frame = new JFrame();
+frame = new JFrame("Currency Converter");
 frame.setBounds(100, 100, 450, 477);
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 frame.getContentPane().setLayout(null);
@@ -139,20 +139,18 @@ String str=String.valueOf(f);
        textField_1.setText(str);
 }
 
-
-
-        if((s1.equals("INR[Indian Rupee]"))&&(s2.equals("INR[Indian Rupee]")))
+if((s1.equals("INR[Indian Rupee]"))&&(s2.equals("INR[Indian Rupee]")))
 {
-
 textField_1.setText(s);
-}else if((s1.equals("INR[Indian Rupee]"))&&(s2.equals("USD[United States Dollar]")))
+}
+else if((s1.equals("INR[Indian Rupee]"))&&(s2.equals("USD[United States Dollar]")))
 {
     double a=Double.parseDouble(s);
     double f=a*0.014;
     String str=String.valueOf(f);
     textField_1.setText(str);
 }
-     else if((s1.equals("INR[Indian Rupee]"))&&(s2.equals("EUR[Euro]")))
+else if((s1.equals("INR[Indian Rupee]"))&&(s2.equals("EUR[Euro]")))
 {
    double a=Double.parseDouble(s);
    double f=a*0.013;
@@ -178,11 +176,7 @@ textField_1.setText(s);
 textField_1.setText(str);
 }
        
-       
-       
-       
-
-        if((s1.equals("EUR[Euro]"))&&(s2.equals("EUR[Euro]")))
+if((s1.equals("EUR[Euro]"))&&(s2.equals("EUR[Euro]")))
 {
 
 textField_1.setText(s);
@@ -325,27 +319,10 @@ textField_1.setText(s);
    double f=a*0.00077;
    String str=String.valueOf(f);
    textField_1.setText(str);
-}
-       
-       
-       
-       
-       
-       
-       
-       
-       
-        /*USD[United States Dollar]
-        EUR[Euro]
-        INR[Indian Rupee]
-        JPY[Japanese Yen]
-        CAD[Canadian Dollar]
-        KRW[South Korean Won]*/
-
-//if(comboBox_1.)
-
-}
+   }
+        }
 });
+
 btnCovert.setBounds(163, 333, 89, 40);
 frame.getContentPane().add(btnCovert);
 
